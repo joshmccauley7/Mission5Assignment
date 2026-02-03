@@ -1,6 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Calculator";
 }
-<h1>@ViewData["Title"]</h1>
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    <p>Calculate How Much to Charge for Tutoring</p>
+
+    <form>
+        <label>Tutoring Hours</label>
+        <input id="hours" type="number"/>
+        <label>Charge Per Hour</label>
+        <input type="number" value="25" id="charge" readonly>
+        <input type="button" value="Calculate" id="btnSubmit" />
+        <br /><br />
+        <label>Charge</label>
+        <input type="text" id="output" />
+    </form>
+</div>
